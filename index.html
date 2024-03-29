@@ -5,35 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bryan Walace</title>
     <link rel="stylesheet" href="./style.css">
-
 </head>
 <body>
 
     <header>     
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#jornada">Jornada</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a class="menu_nav" href="#home">Home</a></li>
+                <li><a class="menu_nav" href="#sobre">sobre</a></li>
+                <li><a class="menu_nav" href="#projetos">Projetos</a></li>
+                <li><a class="menu_nav" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
+      <section class="apresentacao" id="home">
+        <div class="texto">
+            <h3 class="texto_titulo">Olá,</h3>
+            <h1 class="texto_nome">Meu nome é BRYAN</h1>
+            <h4 class="texto_paragrafo">Eu sou estudante de Análise e Desenvolvimento de sistemas <br> em <span class="dev"></span></h4>
 
-    <main class="apresentacao" id="sobre"> <!-- Adicionando o id "sobre" -->
-        <section class="conteudo-lado-a-lado">
-            <div class="texto">
-                <h1 class="texto_titulo">OLÁ!</h1>
-                <h1 class="texto_nome">MEU NOME É BRYAN</h1>
-                <p class="texto_paragrafo">TRANSFORMANDO IDEIAS EM EXPERIÊNCIAS MEMORÁVEIS, MEU PORTFÓLIO, SUA PRÓXIMA JORNADA.</p>
+            <div class="link">
+                <a class="link_social" href="https://www.linkedin.com/in/bryan-walace/" target="_blank">
+                      <img src="./assets/linkedin.png" alt="Linkedin">
+                </a>
+                <a class="link_social" href="https://www.instagram.com/bryan_walace/" target="_blank">
+                    <img src="./assets/instagram.png" alt="Instagram">
+                </a>
+                <a class="link_social" href="https://github.com/BryanWalace" target="_blank">
+                    <img src="./assets/github.png" alt="Github">
+                </a>
+                <a class="link_social" id="whatsappLink" target="_blank">
+                    <img src="./assets/whatz.png" alt="WhatsApp">
+                </a>
             </div>
-            <div class="imagem-container">
-                <img class="imagem" src="./assets/myFoto.png" alt="Minha foto">
-            </div>
-        </section>
-    </main>
-    <section class="jornada" id="jornada"> <!-- Adicionando o id "jornada" -->
-        <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ipsum esse, cumque provident cupiditate officia dolor assumenda eum illum, fugiat quidem culpa? Cum tenetur sapiente totam optio commodi. Impedit, asperiores?</div>
+         </div>
+        <div class="imagem-container">
+            <img class="imagem" src="./assets/myFoto.png" alt="Minha foto">
+        </div>
+            
     </section>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre_imagem">
+            <img class="sobre_imagem_set" src="./assets/myFoto.png" alt="">
+        </div>
+
+        <div class="sobre_mim">
+            <h2>Sobre <span>Mim</span></h2>
+            <p>&nbsp;Bem-vindo ao meu portfólio! Sou um desenvolvedor apaixonado por tecnologia e pelos desafios de encontrar soluções inovadoras e funcionais. Destaco-me pelo meu otimismo inabalável e por habilidades como resolução de problemas, colaboração em equipe, criatividade e um comprometimento constante em aprimorar meu conhecimento.<br><br>
+            &nbsp;Sinto-me animado com a perspectiva de explorar uma oportunidade de estágio ou júnior, com o propósito de aplicar minhas competências, aprimorar minhas habilidades e conhecimentos junto a profissionais experientes na área.
+            </p>
+
+            <div class="botao">
+                <button class="botao_estilo">Download Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
