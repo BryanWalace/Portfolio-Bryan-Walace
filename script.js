@@ -39,6 +39,18 @@ function definirLinkWhatsApp() {
     var whatsappUrl = construirLinkWhatsApp(nome, areaEstudo, areaInteresse);
 
     document.getElementById("whatsappLink").setAttribute("href", whatsappUrl);
+    document.getElementById("whatsappLink2").setAttribute("href", whatsappUrl);
 }
 
 window.onload = definirLinkWhatsApp;
+
+
+const header = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        header.classList.add('background-scroll');
+    } else {
+        header.classList.remove('background-scroll');
+    }
+});

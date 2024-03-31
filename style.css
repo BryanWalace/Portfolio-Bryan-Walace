@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     background-color: #1881f8;
@@ -19,14 +23,6 @@ nav{
     height: 50px;
     width: 100%;
     z-index: 1000;
-  }
-
-label.logo{
-    color: rgb(63, 45, 45);
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 60px;
-    font-weight: bold;
 }
 
 nav ul{
@@ -64,14 +60,19 @@ a.menu_nav:hover{
     gap: 80px;
 }
 
+.background-scroll {
+    background-color: #156fd6;
+    transition: background-color 0.7s ease;
+}
+
+/*----------------------------------------------------------------*/
+
 .apresentacao {
-    gap: 20px;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
 }
@@ -105,6 +106,11 @@ a.menu_nav:hover{
     padding: 0;
 }
 
+.link_social:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 .imagem-container {
     flex: 1;
     display: flex;
@@ -112,11 +118,28 @@ a.menu_nav:hover{
 }
 
 .imagem {
-    max-width: 100%;
+    width: calc(80% - 20px);
+    max-width: 1000px;
     height: 90vh;
     max-height: 100%;
     position: absolute;
     bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .imagem {
+        width: calc(90% - 20px);
+        height: 90vh;
+        max-width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .imagem {
+        width: calc(95% - 20px);
+        height: 90vh;
+        max-width: 1000px;
+    }
 }
 /*----------------------------------------------------------------*/
 .sobre {
@@ -134,8 +157,7 @@ a.menu_nav:hover{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding-right: 2%;
-    margin-top: 2.5%;
+    margin-top: 5%;
     margin-left: 2.5%;
     opacity: 1;
 }
@@ -153,7 +175,9 @@ a.menu_nav:hover{
 .sobre_mim {
     flex: 1;
     padding: 0 5%;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
+    font-style: normal;
     font-size: 20px;
     color: #000000;
     width: 100%;
@@ -164,7 +188,7 @@ a.menu_nav:hover{
 }
 
 .sobre_mim span {
-    color: #000000;
+    color: #1881f8;
 }
 
 .botao {
@@ -222,3 +246,443 @@ a.menu_nav:hover{
     width: 100%;
   }
 /*----------------------------------------------------------------*/
+
+.tec {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.tec_div {
+    padding: 100px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    height: 20%;
+    width: 100vw;
+ }
+
+.tec_div img {
+    height: 50px;
+    width: 50px;
+ }
+
+.tec_div h1{
+    text-align: center;
+    padding: 1px;
+    font-family: "roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1881f8;
+ }
+
+.tec_div p{
+    text-align: center;
+    padding: 5px;
+ }
+
+.tec_div_img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tec_link:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+/*----------------------------------------------------------------*/
+
+.card_main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: "roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.card_div_titulo {
+    width: 100%;
+    height: 10%;
+    margin: 50px;
+    text-align: center;
+    color: #1881f8;
+}
+
+.card {
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #1881f8a6;
+    position: relative;
+}
+
+.card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card_efeito {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1881f84f;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.card:hover .card_efeito {
+    right: 0;
+}
+
+.card_titulo {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card_sub_titulo {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card_texto {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.card_botao {
+    color: #000000;
+    background: #ffffff8f;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+ .card_botao:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+ }
+
+/*----------------------------------------------------------------*/
+.contato {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0 20px 0;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.contato_titulo h1{
+    font-size: 26px;
+    font-weight: 600;
+    color: #1881f8;
+}
+
+.contato_email {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+     padding: 5px 5px 0 0;
+}
+
+.contato_email span {
+    padding: 7px 5px 0 0;
+}
+
+.contato_telefone {
+    display: flex;
+    margin: 5px;
+    text-align: center;
+}
+
+.contato_telefone span {
+    padding: 7px 5px 0 0;
+}
+
+.contato_links {
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.contato_link_email:hover,
+.contato_link_telefone:hover,
+.contato_link_whatz2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+/*----------------------------------------------------------------*/
+
+.rodape {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    
+    
+    nav {
+        position: fixed;
+        top: 0;
+        background-color: #1881f8;
+        padding: 0 20px;
+        height: 50px;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    nav ul{
+        float: left;
+        margin-right: 10%;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        line-height: 50px;
+        margin: 0;
+    }
+    
+     nav ul li a{
+        color: rgb(255, 255, 255);
+        font-size: 3vmin;
+        padding: 10px 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .texto {
+        padding: 10% 5%;
+        text-align: center;
+    }
+
+    .texto_nome {
+        font-size: 60px;
+    }
+
+    .texto_paragrafo {
+        font-size: 16px;
+    }
+
+    .imagem-container {
+        margin-top: 20px;
+    }
+
+    .imagem {
+        position: relative;
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre_imagem {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .sobre_imagem_set {
+        width: 70%;
+        margin-left: 40px;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .sobre_mim {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .sobre_mim h2 {
+        font-size: 30px;
+    }
+
+    .sobre_mim span {
+        font-size: 24px;
+    }
+
+    .tec_div {
+        padding: 20px 20px;
+        font-size: 16px;
+    }
+
+    .tec_div img {
+        display: flex;
+        height: 20px;
+        width: 20px;
+    }
+
+    .card_main {
+        padding: 20px;
+    }
+
+    .card {
+        width: calc(100% - 40px);
+    }
+
+    .card_efeito {
+        padding: 20px;
+    }
+
+    .card_titulo {
+        font-size: 30px;
+    }
+
+    .card_sub_titulo {
+        font-size: 12px;
+    }
+
+    .card_texto {
+        font-size: 14px;
+    }
+
+    .contato {
+        padding: 50px 0;
+    }
+
+    .contato_titulo {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .texto_nome {
+        font-size: 75px;
+    }
+
+    .texto_paragrafo {
+        font-size: 18px;
+    }
+
+    .imagem {
+        max-width: 450px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sobre_imagem_set {
+        max-width: 400px;
+    }
+
+    .sobre_mim h2 {
+        font-size: 35px;
+    }
+
+    .sobre_mim span {
+        font-size: 28px;
+    }
+
+    .tec_div img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .card_main {
+        padding: 50px 0;
+    }
+
+    .contato_titulo {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .texto_nome {
+        font-size: 110px;
+    }
+
+    .texto_paragrafo {
+        font-size: 22px;
+    }
+
+    .imagem {
+        max-width: 550px;
+    }
+
+    .sobre_imagem_set {
+        max-width: 492px;
+    }
+
+    .sobre_mim h2 {
+        font-size: 45px;
+    }
+
+    .sobre_mim span {
+        font-size: 35px;
+    }
+
+    .tec_div img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .card {
+        width: 320px;
+    }
+
+    .card_main {
+        padding: 50px 0;
+    }
+
+    .contato_titulo {
+        font-size: 40px;
+    }
+}

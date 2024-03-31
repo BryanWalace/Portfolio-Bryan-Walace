@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bryan Walace</title>
+    <link rel="icon" type="image/png" href="./assets/myFoto.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
     <header>     
-        <nav>
+        <nav class="background-scroll">
             <ul>
                 <li><a class="menu_nav" href="#home">Home</a></li>
                 <li><a class="menu_nav" href="#sobre">sobre</a></li>
                 <li><a class="menu_nav" href="#projetos">Projetos</a></li>
                 <li><a class="menu_nav" href="#contato">Contato</a></li>
             </ul>
+
         </nav>
     </header>
       <section class="apresentacao" id="home">
@@ -51,18 +53,119 @@
         </div>
 
         <div class="sobre_mim">
-            <h2>Sobre <span>Mim</span></h2>
-            <p>&nbsp;Bem-vindo ao meu portfólio! Sou um desenvolvedor apaixonado por tecnologia e pelos desafios de encontrar soluções inovadoras e funcionais. Destaco-me pelo meu otimismo inabalável e por habilidades como resolução de problemas, colaboração em equipe, criatividade e um comprometimento constante em aprimorar meu conhecimento.<br><br>
-            &nbsp;Sinto-me animado com a perspectiva de explorar uma oportunidade de estágio ou júnior, com o propósito de aplicar minhas competências, aprimorar minhas habilidades e conhecimentos junto a profissionais experientes na área.
+            <h2>SOBRE <span>MIM</span></h2>
+            <p>Sou um desenvolvedor apaixonado por tecnologia e pelos desafios de encontrar soluções inovadoras e funcionais. Destaco-me pelo meu otimismo inabalável e por habilidades como resolução de problemas, colaboração em equipe, criatividade e um comprometimento constante em aprimorar meu conhecimento.<br><br>
+            Sinto-me animado em explorar oportunidades de estágios ou   Dev júnior, com o propósito de aplicar minhas competências, aprimorar minhas habilidades e conhecimentos junto a profissionais experientes na área.
             </p>
 
             <div class="botao">
-                <button class="botao_estilo">Download Resume</button>
+                <a href="./files/curriculum.pdf" download>
+                    <button class="botao_estilo">Curriculum resume</button>
+                </a>
             </div>
         </div>
     </section>
 
+    <section class="tec">
+        <div class="tec_div">
+            <h1>TECNOLOGIAS</h1>
+            <p>Algumas das tecnologias que tenho conhecimento e utilizo.</p>
+            <p></p>
+
+            <div class="tec_div_img">
+               <a class="tec_link" href=""><img src="./assets/html5.png" alt=""></a>
+                <a class="tec_link" href=""><img src="./assets/css3.png" alt=""></a>
+                <a class="tec_link" href=""><img src="./assets/c.png" alt=""></a>
+                <a class="tec_link" href=""><img src="./assets/js.png" alt=""></a>
+                <a class="tec_link" href=""><img src="./assets/sql.png" alt=""></a>
+                <a class="tec_link" href=""><img src="./assets/csharp.png" alt=""></a>
+                <a class="tec_link" href=""><img src="./assets/php.png" alt=""></a>
+                <a class="tec_link" href=""><img src="./assets/java.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="card_main" id="projetos">
+        
+        <div class="card_div_titulo">
+            <h1 class="section_titulo">MEUS PROJETOS</h1>
+        </div>
+    
+        <div class="card">
+            <img class="card_img" src="./assets/myFoto.png" alt="1">
+            <div class="card_efeito">
+                <h1 class="card_titulo">Um</h1>
+                <p class="card_sub_titulo">Ummmmmmmmm</p>
+                <p class="card_texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae, blanditiis iusto deserunt expedita culpa itaque tempore perspiciatis non facilis impedit doloribus assumenda quasi, sunt repellendus dolor! Recusandae, vitae blanditiis?</p>
+    
+                <button class="card_botao">Saiba mais</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img class="card_img" src="./assets/myFoto.png" alt="1">
+            <div class="card_efeito">
+                <h1 class="card_titulo">Dois</h1>
+                <p class="card_sub_titulo">Doissss</p>
+                <p class="card_texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae, blanditiis iusto deserunt expedita culpa itaque tempore perspiciatis non facilis impedit doloribus assumenda quasi, sunt repellendus dolor! Recusandae, vitae blanditiis?</p>
+        
+                <button class="card_botao">Saiba mais</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card_img" src="./assets/myFoto.png" alt="1">
+            <div class="card_efeito">
+                <h1 class="card_titulo">Três</h1>
+                <p class="card_sub_titulo">Trêssss</p>
+                <p class="card_texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae, blanditiis iusto deserunt expedita culpa itaque tempore perspiciatis non facilis impedit doloribus assumenda quasi, sunt repellendus dolor! Recusandae, vitae blanditiis?</p>
+        
+                <button class="card_botao">Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div class="contato_titulo">
+            <h1>Contate Me</h1>
+        </div>
+
+        <div class="contato_email">
+            <img src="./assets/mail.png" alt="Descrição da imagem" class="icon">
+            <span class="text">bryanwalace@hotmail.com</span>
+        </div>
+
+        <div class="contato_telefone">
+            <img src="./assets/tel.png" alt="Descrição da imagem" class="icon">
+            <span class="text">5541997268640</span>
+        </div>
+
+        <div class="contato_links">
+            <div class="contato_link_email">
+                <a href="mailto:bryanwalace@hotmail.com" class="botao_personalizado">
+                    <img src="./assets/mail2.png" alt="">
+                </a>
+            </div>
+            <div class="contato_link_telefone">
+                <a href="tel:+5541997268640">
+                    <img src="./assets/tel2.png" alt="">
+                </a>
+            </div>
+            <div class="contato_link_whatz2">
+                <a class="link_social" id="whatsappLink2" target="_blank">
+                    <img src="./assets/whatz2.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p>&copy; 2024 Bryan Walace. Todos os direitos reservados.</p>
+    </footer>
+    
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="./script.js"></script>
+
 </body>
 </html>
